@@ -22,5 +22,4 @@ window.addEventListener('scroll', () => {
       window.pageYOffset < window.innerHeight
       ? homeBlock.style.transform = `translateY(-${window.pageYOffset/8}px)`
       : null
-      console.log(window.pageYOffset)
 })

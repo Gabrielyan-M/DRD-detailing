@@ -55,7 +55,11 @@
     --light-color: rgba(255, 255, 255, 1);
     --add-color: rgba(11, 102, 6, 1);
 
-    --dark-color-07: rgba(0, 0, 0, 0.7);
+    --dark-text-color: rgba(0, 0, 0, 1);
+    --light-text-color: rgba(255, 255, 255, 1);
+    --add-text-color: rgba(11, 102, 6, 1);
+
+    --border-green: 3px solid rgba(11, 102, 6, 0.5);
 }
 
 .center-block {

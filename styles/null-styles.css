@@ -9,10 +9,15 @@
     width: 0;
 }
 
+html {
+    background-color: #000000;
+}
+
 body {
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
@@ -31,6 +36,7 @@ h1 {
 h2 {
     font-size: clamp(2.5rem, 1.6923rem + 3.5897vw, 6rem);
     font-weight: var(--bold-font);
+    text-align: center;
 }
 
 p,

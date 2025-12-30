@@ -18,8 +18,7 @@
 @import url('./blocks/main/reviews/reviews-styles.css');
 
 /* contacts-and-form */
-@import url('./blocks/main/contacts-and-form/contacts-styles.css');
-@import url('./blocks/main/contacts-and-form/form-styles.css');
+@import url('./blocks/main/contacts/contacts-styles.css');
 
 
 
