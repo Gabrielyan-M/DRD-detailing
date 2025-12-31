@@ -20,6 +20,14 @@ body {
     background-color: #ffffff;
 }
 
+.welcome-block {
+    background-color: #000000;
+}
+
+main {
+    background-color: #ffffff;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
     font-family: 'Montserrat';
     margin: 0;
@@ -57,6 +65,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 
 
 
