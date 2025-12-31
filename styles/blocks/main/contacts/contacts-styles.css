@@ -67,6 +67,12 @@
       gap: 40px;
 }
 
+.contacts-block .phone-number::before {
+      flex-direction: row;
+      gap: 40px;
+      background-color: var(--dark-text-color);
+}
+
 
 
 

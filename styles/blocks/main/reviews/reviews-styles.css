@@ -44,22 +44,13 @@
             margin-top: 110px;
       }
 
-      .yandex-reviews-container {
-            width: 436px;
-            height: 600px;
+      .yandex-reviews-block {
+            width: 90%;
+            max-width: 480px;
+            border-radius: 52px;
       }
-}
-
-@media screen and (max-width: 800px) {
       .yandex-reviews-container {
-            width: 374px;
+            width: 100%;
             height: 700px;
-      }
-}
-
-@media screen and (max-width: 600px) {
-      .yandex-reviews-container {
-            width: 320px;
-            height: 600px;
       }
 }

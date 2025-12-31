@@ -1,0 +1,123 @@
+@import url("../../root-styles.css");
+
+footer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      background-color: var(--dark-color);
+
+      padding: 4vw 3vw 4vw;
+}
+
+footer h2, 
+footer p, 
+.servises-footer a,
+footer .number-block a, .number-block span a {
+      color: var(--light-text-color);
+}
+
+footer h2 {
+      font-size: clamp(1.25rem, 0.125rem + 3vw, 2rem);
+      margin-bottom: clamp(40px, 3.2vw, 56px);
+}
+
+.servises-footer ul  {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+}
+
+.servises-footer ul a span  {
+      font-size: clamp(1rem, 0.25rem + 2vw, 1.5rem);
+}
+
+.servises-footer a {
+      color: var(--light-text-color);
+}
+
+footer .contacts-block {
+    gap: 30px;
+}
+
+footer p,
+footer ul a,
+footer .number-block a, .number-block span a {
+      font-size: clamp(1rem, 0.25rem + 2vw, 1.5rem);
+}
+
+footer p > span{
+      font-size: clamp(0.875rem, 0.3125rem + 1.5vw, 1.25rem);
+      color: var(--add-color);
+}
+
+footer .number-block a svg,
+footer .contacts-block svg {
+      width: clamp(46px, 3vw, 60px);
+      height: clamp(46px, 3vw, 60px);
+}
+
+.block-in-footer {
+      width: 25vw;
+      max-width: 410px;
+      min-width: 390px;
+}
+
+.contacts-footer,
+.address-footer {
+      text-align: center;
+}
+
+footer .contacts-block .phone-number::before {
+    background-color: var(--light-text-color);
+}
+
+.address-footer p:nth-child(2) {
+      margin-bottom: 26px;
+}
+
+
+/* adaptive */
+@media screen and (max-width: 1300px) {
+      footer {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 80px;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+
+      .block-in-footer {
+            width: unset;
+            max-width: unset;
+            min-width: unset;
+      }
+
+      footer {
+            padding: 10vw 0 10vw;
+            gap: 100px;
+      }
+
+      .servises-footer li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .servises-footer a {
+            text-align: center;
+      }
+
+      .contacts-block ul {
+            gap: 20px;
+      }
+
+      footer .number-block a svg, footer .contacts-block svg {
+            width: clamp(40px, 3vw, 60px);
+            height: clamp(40px, 3vw, 60px);
+      }
+}

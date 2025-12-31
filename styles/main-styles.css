@@ -20,7 +20,11 @@
 /* contacts-and-form */
 @import url('./blocks/main/contacts/contacts-styles.css');
 
+/* map */
+@import url('./map-styles.css');
 
+/* footer */
+@import url('./blocks/footer/footer-styles.css');
 
 
 
@@ -44,6 +48,3 @@ body.active {
       align-items: center;
       width: 100vw;
 }
-
-
-
