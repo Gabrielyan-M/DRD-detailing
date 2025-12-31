@@ -17,7 +17,6 @@ body {
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-    background-color: white;
 }
 
 main {
@@ -61,6 +60,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 
 
 
