@@ -19,10 +19,6 @@ body {
     -ms-overflow-style: none;
 }
 
-/* .welcome-block {
-    background-color: #000000;
-} */
-
 main {
     background-color: #ffffff;
 }
@@ -64,6 +60,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 
 
 
