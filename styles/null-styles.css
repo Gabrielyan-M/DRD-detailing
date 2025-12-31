@@ -17,12 +17,11 @@ body {
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-    background-color: #ffffff;
 }
 
-.welcome-block {
+/* .welcome-block {
     background-color: #000000;
-}
+} */
 
 main {
     background-color: #ffffff;
@@ -65,6 +64,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 
 
 
