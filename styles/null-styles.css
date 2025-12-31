@@ -13,11 +13,14 @@ html {
     background-color: #000000;
 }
 
+.web-block {
+    background-color: #ffffff;    
+}
+
 body {
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;
-    background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
@@ -57,4 +60,5 @@ img {
     max-width: 100%;
     display: block;
 }
+
 
