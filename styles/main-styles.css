@@ -14,6 +14,9 @@
 /* servises */
 @import url('./blocks/main/servises/services-styles.css');
 
+/* equipment */
+@import url('./blocks/main/equipment-styles.css');
+
 /* reviews */
 @import url('./blocks/main/reviews/reviews-styles.css');
 

@@ -1,6 +1,7 @@
 @import url("../../root-styles.css");
 
 footer {
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -9,6 +10,12 @@ footer {
       background-color: var(--dark-color);
 
       padding: 4vw 3vw 4vw;
+}
+
+footer .button-scroll-bottom {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
 }
 
 footer h2, 
@@ -62,6 +69,7 @@ footer .contacts-block svg {
       width: 25vw;
       max-width: 410px;
       min-width: 390px;
+      margin-top: 100px;
 }
 
 .contacts-footer,
