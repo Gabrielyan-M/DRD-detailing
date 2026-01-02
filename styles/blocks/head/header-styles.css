@@ -18,7 +18,7 @@ header {
       padding: clamp(20px, 2.78vh, 30px) clamp(30px, 3.125vw, 60px);
 }
 
-.header-logo-block:active > svg {
+.logo-block:active > svg {
       opacity: 0.85;
 }
 
@@ -145,7 +145,7 @@ header.active .mobile-menu {
             padding: clamp(18px, 3.125vh, 25px) clamp(30px, 3.47vw, 50px);
       }
 
-      .header-logo-block > svg {
+      .logo-block > svg {
             width: 120px;
             height: 40px;
       }
@@ -157,7 +157,7 @@ header.active .mobile-menu {
             padding: clamp(12px, 2.6vh, 20px) clamp(20px, 3.47vw, 50px);
       }
 
-      .header-logo-block > svg {
+      .logo-block > svg {
             width: 118px;
             height: 40px;
       }
@@ -179,7 +179,7 @@ header.active .mobile-menu {
             display: none;
       }
 
-      .header-logo-block > svg {
+      .logo-block > svg {
             width: 100px;
             height: 34px;
       }
@@ -188,7 +188,7 @@ header.active .mobile-menu {
 
 @media screen and (max-width: 700px) {
 
-      .header-logo-block > svg {
+      .logo-block > svg {
             width: 70px;
             height: 24px;
       }

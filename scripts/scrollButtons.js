@@ -14,7 +14,7 @@ scrollButtom.forEach(button => {
             : null
 
             button.getAttribute('data-js-scroll-button') === 'top' 
-            ? window.scrollTo({ top: welcomeBlock.getBoundingClientRect().y, behavior: 'smooth' })
+            ? window.scrollTo({ top: 0, behavior: 'smooth' })
             : null
 
             button.getAttribute('data-js-scroll-button') === 'form' 
