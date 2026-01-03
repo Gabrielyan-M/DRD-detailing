@@ -6,6 +6,8 @@ const homeBlock = document.querySelector('[data-js-welcome-block]')
 const formBlock = document.querySelector('[data-js-form-block]')
 
 
+
+
 scrollButtom.forEach(button => {
       button.addEventListener('click', (e) => {
 
@@ -21,13 +23,4 @@ scrollButtom.forEach(button => {
             ? window.scrollTo({ top: formBlock.getBoundingClientRect().y + formBlock.clientHeight/2 - window.innerHeight/2, behavior: 'smooth' })
             : null
       })
-})
-
-
-
-// resize welcome block
-window.addEventListener('scroll', () => {
-      window.pageYOffset < window.innerHeight
-      ? homeBlock.style.transform = `translateY(-${window.pageYOffset/8}px)`
-      : null
 })

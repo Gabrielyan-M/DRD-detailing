@@ -3,27 +3,47 @@ const navigationMenu = document.querySelectorAll('[data-js-navigation-menu]')
 const body = document.querySelector('[data-js-body]')
 
 
-function navMenu (data) {
-      navigationMenu.forEach(menu => {
-            if (menu.getAttribute('data-js-navigation-menu') === data) {
-                  menu.classList.toggle('active')
-                  
-            }
-      })
-}
 
+// button
 burgerButton.forEach((button) => {
       button.addEventListener('click', () => {
-            if ( button.getAttribute('data-js-burger-button') ) {
+            if ( button.getAttribute('data-js-burger-button') === "header" ) {
+                  navMenu (button.getAttribute('data-js-burger-button'))
+                  button.classList.toggle('active')
+                  body.classList.toggle('active')
+            } 
+
+            if ( button.getAttribute('data-js-burger-button') === "main" ) {
                   navMenu (button.getAttribute('data-js-burger-button'))
                   button.classList.toggle('active')
             } 
 
-            body.classList.toggle('active')
+
       })
 })
 
+function navMenu (data) {
+      navigationMenu.forEach(menu => {
+            if (menu.getAttribute('data-js-navigation-menu') === data) {
+                  menu.classList.toggle('active')
+            }
+      })
+}
 
+// menu
+navigationMenu.forEach(menu => {
+      menu.addEventListener('click', (e) => {
+           if ( e.target.getAttribute('href') ) {
+                  menu.classList.remove('active')
+                  burgerButton.forEach(button => button.classList.remove('active'))
+            } else {
+                  return null
+            }
+            
+      })
+})
+
+// window resize (close nav. menu)
 window.addEventListener('resize', (e) => {
       if (e.target.innerWidth > 1000 ) {
             burgerButton.forEach(elem => {
@@ -38,4 +58,12 @@ window.addEventListener('resize', (e) => {
       }
 })
 
-
+// resize welcome block
+window.addEventListener('scroll', () => {
+            if ( window.pageYOffset > window.innerHeight ) {
+                  document.querySelector('.navigation-menu-main').classList.add('visible')
+            }
+            if (window.pageYOffset < window.innerHeight - 10) {
+                  document.querySelector('.navigation-menu-main').classList.remove('visible')
+            }
+})
