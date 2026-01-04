@@ -36,6 +36,7 @@ navigationMenu.forEach(menu => {
            if ( e.target.getAttribute('href') ) {
                   menu.classList.remove('active')
                   burgerButton.forEach(button => button.classList.remove('active'))
+                  body.classList.remove('active')
             } else {
                   return null
             }
@@ -66,4 +67,5 @@ window.addEventListener('scroll', () => {
             if (window.pageYOffset < window.innerHeight - 10) {
                   document.querySelector('.navigation-menu-main').classList.remove('visible')
             }
+
 })
