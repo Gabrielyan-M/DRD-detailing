@@ -1,6 +1,6 @@
 .equipment-block {
       width: 100vw;
-      margin-top: clamp (130px, 8vw, 200px);
+      margin-top: clamp(130px, 8vw, 200px);
       overflow: hidden;
       display: flex;
       flex-direction: column;
