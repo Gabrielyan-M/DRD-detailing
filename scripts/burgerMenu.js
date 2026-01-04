@@ -67,5 +67,4 @@ window.addEventListener('scroll', () => {
             if (window.pageYOffset < window.innerHeight - 10) {
                   document.querySelector('.navigation-menu-main').classList.remove('visible')
             }
-
 })

@@ -22,10 +22,57 @@
       position: relative;
       width: 420px;
       height: 315px;
-      background-color: gray;
+      /* background-color: gray; */
       border-radius: 30px;
       padding: 10px;
+      overflow: hidden;
 }
+
+/* background images | url */
+.dry-cleaning {
+      background-image: url('../../../../media/images/servises/001dry-cleaning/photo11.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.noise-insulation {
+      background-image: url('../../../../media/images/servises/002noise-insulation/photo21.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.engine-washing {
+      background-image: url('../../../../media/images/servises/003engine-washing/photo31.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.ozonation {
+      background-image: url('../../../../media/images/servises/004ozonation/photo41.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.headlight-restoration {
+      background-image: url('../../../../media/images/servises/005restoring-headlights/photo51.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.anti-rain {
+      background-image: url('../../../../media/images/servises/006anti-rain/photo61.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+
+/* x */
 
 .card-container {
       width: 100%;

@@ -82,8 +82,14 @@
 
 .navigation-menu-main-container {
       overflow: hidden;
-      height: 0px;
       transition: 0.22s;
+}
+
+
+.navigation-menu-main.active .navigation-menu-main-container {
+      padding-left: 40px;
+      gap: 60px;
+
 }
 
 
@@ -285,13 +291,18 @@
             border-radius: 30px;
       }
 
+      .navigation-menu-main-container {
+            height: 0px;
+      }
+
       .navigation-menu-main.active .navigation-menu-main-container {
             height: 100%;
+            padding: 0px;
       }
 
       .navigation.menu.in-fixed-block {
             height: 0px;
-            }
+      }
 
       .navigation.menu.in-fixed-block.active {
             width: 100%;
