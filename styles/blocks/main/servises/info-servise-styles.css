@@ -10,7 +10,7 @@
 
 .info-servise-container p {
       margin-top: 50px;
-      font-size: clamp(0.875rem, 0.8667rem + 0.9444vw, 2rem);
+      font-size: clamp(0.875rem, 0.5789rem + 1.1842vw, 2rem);
 }
 
 .info-servise-container ul {
@@ -22,14 +22,18 @@
 }
 
 .info-servise-container ul li{
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 10px;
-      font-size: clamp(0.875rem, 0.8667rem + 0.9444vw, 2rem);
+      margin-left: 10px;
+      font-size: clamp(0.875rem, 0.5789rem + 1.1842vw, 2rem);
 }
 
 .info-servise-container ul li::before{
+      position: absolute;
+      top: 50%;
+      left: -20px;
       content: "";
       width: 10px;
       height: 10px;
@@ -121,6 +125,15 @@
 }
 
 @media screen and (max-width: 600px) {
+
+      .info-servise-container {
+            padding: 0px 10px;
+      }
+
+      .info-servise-container ul {
+            margin-top: 20px;
+            margin-left: 10px;
+      }
 
       .images-slide-block {
             margin: 30px 0px 20px;

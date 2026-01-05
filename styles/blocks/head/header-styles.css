@@ -193,4 +193,13 @@ header.active .mobile-menu {
             height: 24px;
       }
 
+      .mobile-menu .navigation.menu ul {
+            gap: 5.5vh;
+      }
+
+      .navigation.menu a, .phone-number {
+            font-size: 20px;
+      }
+      
+
 }

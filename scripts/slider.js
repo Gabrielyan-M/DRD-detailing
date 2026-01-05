@@ -38,9 +38,7 @@ function indexDoun () {
 }
 
 function slideOn() {
-      imagesContainer.style.transform = `translateX(calc(-${i * 100}%))`;
-      
-      console.log(imageIndex);
+      imagesContainer.style.transform = `translateX(-${i * 100}%)`;
       
 
       imageIndex.forEach((circle, index) => {
@@ -52,4 +50,28 @@ function slideOn() {
       })
 
 }
+
+
+
+// swipe touth
+let startX = 0
+let currentX = 0
+let isDreagging = false
+const threshold = 50
+
+imagesBlock.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX      
+})
+imagesBlock.addEventListener('touchmove', (e) => {
+      currentX = e.touches[0].clientX      
+})
+imagesBlock.addEventListener('touchend', (e) => {
+      const diff = startX - currentX
+      
+      if (diff > threshold) {
+            indexUp ()
+      } else if (diff < -threshold) {
+            indexDoun()
+      }
+})
 
