@@ -111,6 +111,11 @@
       transition: width 0.22s;
 }
 
+
+.card-block:active .more-button {
+      opacity: 0.8;
+}
+
 .more-button span {
       font-weight: var(--regular-font);
       color: var(--light-color);
@@ -133,6 +138,9 @@
 }
 
 @media (hover: hover) {
+      .card-block:hover {
+            cursor: pointer;
+      }
       .card-block:hover .more-button {
             width: 200px;
       }

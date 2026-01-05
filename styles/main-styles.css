@@ -4,6 +4,7 @@
 
 /* header */
 @import url('./blocks/head/header-styles.css');
+@import url('./blocks/head/header-servise-style.css');
 
 /* head */
 @import url('./blocks/head/head-styles.css');
@@ -13,6 +14,7 @@
 
 /* servises */
 @import url('./blocks/main/servises/services-styles.css');
+@import url('./blocks/main/servises/info-servise-styles.css');
 
 /* equipment */
 @import url('./blocks/main/equipment-styles.css');
@@ -34,6 +36,7 @@
 
 /* all */
 @import url('./blocks/burger-button-styles.css');
+
 
 
 
