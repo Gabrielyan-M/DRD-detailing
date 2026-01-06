@@ -54,3 +54,20 @@ body.active {
       align-items: center;
       width: 100vw;
 }
+
+.contacts-svg-list li a svg {
+      opacity: 0.8;
+      transition: 0.22s;
+}
+
+@media (hover: hover) {
+      .contacts-svg-list:hover li a svg {
+            opacity: 1;
+      }
+}
+
+@media (hover: none) {
+      .contacts-svg-list:active li a svg {
+            opacity: 1;
+      }
+}

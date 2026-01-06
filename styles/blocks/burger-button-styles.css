@@ -189,7 +189,7 @@
       .navigation-menu-main.active {
             padding-left: 30px;
             gap: 20px;
-
+            justify-content: space-between;
             width: calc(100% - 50px);
       }
 

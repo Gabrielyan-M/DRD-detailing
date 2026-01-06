@@ -11,16 +11,23 @@ const formBlock = document.querySelector('[data-js-form-block]')
 scrollButtom.forEach(button => {
       button.addEventListener('click', (e) => {
 
-            button.getAttribute('data-js-scroll-button') === 'bottom' 
-            ? window.scrollTo({ top: welcomeBlock.clientHeight, behavior: 'smooth' })
-            : null
+            switch (button.getAttribute('data-js-scroll-button')) {
+                  case 'bottom':
+                        window.scrollTo({ top: welcomeBlock.clientHeight, behavior: 'smooth' })
+                        break
+                  case 'top':
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                        break
+                  case 'form':
+                        
+                        
+                        window.scrollTo({ top: formBlock.getBoundingClientRect().y + formBlock.clientHeight/2 - window.innerHeight/2, behavior: 'smooth' })
+                        break
 
-            button.getAttribute('data-js-scroll-button') === 'top' 
-            ? window.scrollTo({ top: 0, behavior: 'smooth' })
-            : null
+                  default:
+                        return
+            } 
 
-            button.getAttribute('data-js-scroll-button') === 'form' 
-            ? window.scrollTo({ top: formBlock.getBoundingClientRect().y + formBlock.clientHeight/2 - window.innerHeight/2, behavior: 'smooth' })
-            : null
+
       })
 })
