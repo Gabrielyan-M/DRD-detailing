@@ -13,6 +13,16 @@
       font-size: clamp(0.875rem, 0.5789rem + 1.1842vw, 2rem);
 }
 
+.info-servise-container .price-block {
+      margin-top: 50px;
+}
+
+.info-servise-container .price-block p {
+      margin-top: 20px;
+      font-weight: var(--medium-font);
+      font-size: clamp(0.875rem, 0.5789rem + 1.1842vw, 2rem);
+}
+
 .info-servise-container ul {
       display: flex;
       flex-direction: column;
@@ -33,6 +43,7 @@
 .info-servise-container ul li::before{
       position: absolute;
       top: 50%;
+      transform: translateY(-50%);
       left: -20px;
       content: "";
       width: 10px;
