@@ -20,8 +20,8 @@ scrollButtom.forEach(button => {
                         break
                   case 'form':
                         
-                        
-                        window.scrollTo({ top: formBlock.getBoundingClientRect().y + formBlock.clientHeight/2 - window.innerHeight/2, behavior: 'smooth' })
+                        scrollToForm ()
+                        // window.scrollTo({ top: formBlock.getBoundingClientRect().y + formBlock.clientHeight/2 - window.innerHeight/2, behavior: 'smooth' })
                         break
 
                   default:
@@ -33,3 +33,11 @@ scrollButtom.forEach(button => {
 })
 
 
+function scrollToForm () {
+
+      if (document.querySelector('#formBlock')) {
+            document.querySelector('#formBlock').scrollIntoView({block: 'center', behavior: 'smooth'})
+      }     
+}
+
+export { scrollToForm }

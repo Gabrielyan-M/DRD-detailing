@@ -1,7 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-      console.log(document.querySelector('#formBlock'));
-      
-      if (location.hash === "#formBlock") {
-            document.querySelector('#formBlock').scrollIntoView({behavior: 'smooth', block: 'center'})
+import { scrollToForm } from './scrollButtons.js'
+
+window.addEventListener('load', () => {
+      if (location.hash === '#formBlock' ) {
+            scrollToForm ()
       }
 })
