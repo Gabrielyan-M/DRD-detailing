@@ -85,3 +85,10 @@
       }
 }
 
+@media screen and (max-width: 600px) {
+      .list-feature-container svg {
+            width: 114px;
+            height: 114px;
+      }
+}
+
