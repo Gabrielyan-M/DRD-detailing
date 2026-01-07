@@ -18,24 +18,35 @@ function openPage (cardID) {
             case '001':
                   pageLink = './service-pages/dryCleaning.html'
                   break
+
             case '002':
                   pageLink = './service-pages/noiseInsulation.html'
                   break
+
             case '003':
                   pageLink = './service-pages/motorWashing.html'
                   break
+
             case '004':
                   pageLink = './service-pages/ozonation.html'
                   break
+
             case '005':
                   pageLink = './service-pages/headlightRestoration.html'
                   break
+
             case '006':
                   pageLink = './service-pages/antiRain.html'
                   break
+                  
             case '007':
                   pageLink = './service-pages/polishing.html'
                   break
+
+            case '008':
+                  pageLink = './service-pages/tinting.html'
+                  break
+
 
             default:
                   return

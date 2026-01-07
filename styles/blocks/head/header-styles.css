@@ -22,6 +22,12 @@ header {
       opacity: 0.85;
 }
 
+.navigation.menu.desktop {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
 
 .phone-number {
       display: flex;

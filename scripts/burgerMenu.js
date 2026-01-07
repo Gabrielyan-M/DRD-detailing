@@ -60,11 +60,13 @@ window.addEventListener('resize', (e) => {
 })
 
 // resize welcome block
-window.addEventListener('scroll', () => {
-            if ( window.pageYOffset > window.innerHeight ) {
-                  document.querySelector('.navigation-menu-main').classList.add('visible')
-            }
-            if (window.pageYOffset < window.innerHeight - 10) {
-                  document.querySelector('.navigation-menu-main').classList.remove('visible')
-            }
-})
+if (document.querySelector('.navigation-menu-main')) {
+      window.addEventListener('scroll', () => {
+                  if ( window.pageYOffset > window.innerHeight ) {
+                        document.querySelector('.navigation-menu-main').classList.add('visible')
+                  }
+                  if (window.pageYOffset < window.innerHeight - 10) {
+                        document.querySelector('.navigation-menu-main').classList.remove('visible')
+                  }
+      })
+}

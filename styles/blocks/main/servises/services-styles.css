@@ -76,7 +76,13 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      grid-column: 2 / 3;
+}
+
+.tinting {
+      background-image: url('../../../../media/images/servises/008tinting/photo81.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
 }
 
 
