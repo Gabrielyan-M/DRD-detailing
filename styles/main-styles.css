@@ -16,6 +16,15 @@
 @import url('./blocks/main/servises/services-styles.css');
 @import url('./blocks/main/servises/info-servise-styles.css');
 
+
+/* examples work */
+@import url('./blocks/main/works/examplesWork.css');
+
+/* stages work */
+@import url('./blocks/main/works/stagesWork.css');
+
+
+
 /* equipment */
 @import url('./blocks/main/equipment-styles.css');
 
@@ -34,8 +43,11 @@
 
 
 
+
+
 /* all */
 @import url('./blocks/burger-button-styles.css');
+
 
 
 
@@ -45,6 +57,10 @@
 body.active {
       height: 100vh;
       overflow: hidden;
+}
+
+section {
+      width: 100vw;
 }
 
 .web-block {

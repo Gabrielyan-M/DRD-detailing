@@ -1,0 +1,108 @@
+@import url('../../../root-styles.css');
+
+.categories-block {
+      width: 100%;
+      padding: 80px;
+}
+
+.categories-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+}
+
+.categories-container span {
+      position: relative;
+      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+      padding: 0.5em 0.75em;
+      color: var(--dark-color);
+      border-radius: 30px;
+      transition: color 0.22s, background-color 0.22s;
+}
+
+.categories-container span:hover {
+      cursor: pointer;
+
+}
+
+.categories-container span.active {
+      color: var(--light-color);
+      background-color: var(--dark-color);
+}
+
+.examples-work-images-block {
+      display: none;
+      justify-content: center;
+      gap: 80px;
+}
+
+.examples-work-images-block.active {
+      display: flex;
+}
+
+.examples-work-images-container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      width: 650px;
+      height: 450px;
+
+      border-radius: 30px;
+      overflow: hidden;
+}
+
+.scroll-line-block {
+      position: absolute;
+      left: 50%;
+      top: 0px;
+      width: 4px;
+      height: 100%;
+      background-color: white;
+      z-index: 30;
+}
+
+.scroll-line-block::after {
+      position: absolute;
+      content: url('../../../../media/svg-elements/circle-scroll.svg');
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+}
+
+.work-image-left {
+      position: absolute;
+      width: 50%;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      overflow: hidden;
+      z-index: 20;
+}
+
+.work-image-right {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+      overflow: hidden;
+      z-index: 10;
+      width: 650px;
+}
+
+.work-image-right img, 
+.work-image-left img {
+      width: 650px;
+      height: 100%;
+      object-fit: cover;
+      max-width: unset;
+}
+
+
+
