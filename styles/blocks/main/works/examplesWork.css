@@ -31,13 +31,9 @@
 }
 
 .examples-work-images-block {
-      display: none;
+      display: flex;
       justify-content: center;
       gap: 80px;
-}
-
-.examples-work-images-block.active {
-      display: flex;
 }
 
 .examples-work-images-container {
@@ -102,6 +98,7 @@
       height: 100%;
       object-fit: cover;
       max-width: unset;
+      user-select: none
 }
 
 
