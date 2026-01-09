@@ -20,11 +20,8 @@ const beforeAfterSlider = (x, i) => {
 imagesWorkContainer.forEach((container, index) => {
       container.addEventListener('mousemove', (e) => {
             if ( !isActiveArr[index] ) return
-            const x = Math.max(0, e.clientX - container.getBoundingClientRect().left) 
-            beforeAfterSlider(x, index)
-
-            console.log(e);
-            
+            let x = Math.max(0, e.clientX - container.getBoundingClientRect().left) 
+            beforeAfterSlider(x, index)           
       });
 
       container.addEventListener('mouseleave', (e) => {
@@ -32,17 +29,17 @@ imagesWorkContainer.forEach((container, index) => {
       });
 
       container.addEventListener('touchmove', (e) => {
+            e.preventDefault()
             isActiveArr[index] = true
 
             let i
             let x
 
             for ( i = 0; i < e.changedTouches.length; i++ ) {
-                  x = Math.max(0, e.changedTouches[i] - container.getBoundingClientRect().left)
+                  x = Math.max(0, e.changedTouches[0].clientX - container.getBoundingClientRect().left)
             }
             
             beforeAfterSlider(x, index)
-
       });
 });
 
@@ -68,4 +65,3 @@ scrollLine.forEach((line, index) => {
             isActiveArr[index] = false
       })
 })
-
