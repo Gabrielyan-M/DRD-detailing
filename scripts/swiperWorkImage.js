@@ -38,7 +38,7 @@ imagesWorkContainer.forEach((container, index) => {
             let x
 
             for ( i = 0; i < e.changedTouches.length; i++ ) {
-                  x = Math.max(0, e.changeTouches[i] - container.getBoundingClientRect().left)
+                  x = Math.max(0, e.changedTouches[i] - container.getBoundingClientRect().left)
             }
             
             beforeAfterSlider(x, index)
@@ -68,3 +68,4 @@ scrollLine.forEach((line, index) => {
             isActiveArr[index] = false
       })
 })
+
