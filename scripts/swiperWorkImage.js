@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 })
 
-
-
 const beforeAfterSlider = (x, i) => {
       let percent = Math.max(0, Math.min(x, imagesWorkContainer[i].getBoundingClientRect().width))
       scrollLine[i].style.left = `${percent}px`
@@ -20,7 +18,7 @@ const beforeAfterSlider = (x, i) => {
 }
 
 imagesWorkContainer.forEach((container, index) => {
-      container.addEventListener('pointermove', (e) => {
+      container.addEventListener('mousemove', (e) => {
             if ( !isActiveArr[index] ) return
             const x = Math.max(0, e.clientX - container.getBoundingClientRect().left) 
             beforeAfterSlider(x, index)
@@ -33,8 +31,19 @@ imagesWorkContainer.forEach((container, index) => {
             isActiveArr[index] = false
       });
 
-            
+      container.addEventListener('touchmove', (e) => {
+            isActiveArr[index] = true
 
+            let i
+            let x
+
+            for ( i = 0; i < e.changedTouches.length; i++ ) {
+                  x = Math.max(0, e.changeTouches[i] - container.getBoundingClientRect().left)
+            }
+            
+            beforeAfterSlider(x, index)
+
+      });
 });
 
 scrollLine.forEach((line, index) => {
@@ -52,17 +61,10 @@ scrollLine.forEach((line, index) => {
       })
 
       line.addEventListener('touchend', () => {
-            isActiveArr[index] = true
+            isActiveArr[index] = false
+      })
+
+      line.addEventListener('touchcansel', () => {
+            isActiveArr[index] = false
       })
 })
-
-
-
-// imagesWorkContainerTWO.addEventListener('mousemove', (e) => {
-//       // if ( !isActive ) return
-
-//       let x = e.offsetX
-//       console.log(x);
-      
-// })
-
