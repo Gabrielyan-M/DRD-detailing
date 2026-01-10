@@ -130,7 +130,7 @@ input[type="tel"] {
       border-radius: 16px;
       border: 2px solid rgba(0, 0, 0, 0.2);
 
-      font-family: 'Montserrat';
+      font-family: 'Exo2';
       font-weight: var(--regular-font);
       letter-spacing: 1.66px;
       font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);;
@@ -146,7 +146,7 @@ input[type="tel"]::-webkit-inner-spin-button {
 }
 
 input::placeholder {
-      font-family: 'Montserrat';
+      font-family: 'Exo2';
       font-weight: var(--regular-font);
       letter-spacing: 1.66px;
       font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
@@ -201,7 +201,7 @@ input[type="checkbox"]:checked {
 
 
 .checkbox label {
-      font-family: 'Montserrat';
+      font-family: 'Exo2';
       font-weight: var(--regular-font);
       letter-spacing: 1.66px;
       font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="submit"] {
-      font-family: 'Montserrat';
+      font-family: 'Exo2';
       font-size: clamp(0.875rem, 0.5909rem + 0.7576vw, 1.5rem);
       letter-spacing: 1.66px;
       color: var(--light-text-color);

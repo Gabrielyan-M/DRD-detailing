@@ -144,7 +144,7 @@
 }
 .all-servise-button {
       display: none;
-      font-family: 'Montserrat';
+      font-family: 'Exo2';
       font-size: clamp(0.875rem, 0.5909rem + 0.7576vw, 1.5rem);
       letter-spacing: 1.66px;
       color: var(--light-text-color);
