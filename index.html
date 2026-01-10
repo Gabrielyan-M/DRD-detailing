@@ -16,7 +16,7 @@
             <section class="welcome-block" data-js-welcome-block>
                   <header data-js-navigation-menu="header">
                         <div class="header-container">
-                              <a href="./index.html" class="logo-block" data-js-logo-button>
+                              <a href="./index.html" class="logo-block" data-js-logo-button data-js-hidden-element="100">
                                     <svg width="132" height="44" viewBox="0 0 132 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M46.8909 44L55.8314 0H74.9004C83.4033 0 86.9357 3.51795 85.4977 10.5538C84.3515 16.2769 79.3394 20.7179 70.4614 23.8769L81.5902 44H74.5878L64.3968 24.2154L65.1471 20.4923C73.5458 19.159 78.2661 15.9282 79.3081 10.8C80.1209 6.73846 78.1515 4.70769 73.3999 4.70769H60.6456L52.6741 44H46.8909Z" fill="white"/>
                                           <path d="M17.1933 39.3846C28.1345 39.3846 34.866 33.1897 37.3877 20.8C39.5759 10.0103 35.1994 4.61538 24.2582 4.61538H19.0221H17.631H13.7859L6.72103 39.3846H17.1933ZM0 44L8.94053 0H14.9017L13.7859 4.61538H17.631L18.7418 0H25.196C39.9927 0 45.9843 6.93333 43.1709 20.8C40.024 36.2667 31.0522 44 16.2555 44H0Z" fill="white"/>
@@ -26,15 +26,15 @@
                               
                               <nav class="navigation menu desktop">
                                     <ul>
-                                          <li><a href="#aboutUs">О нас</a></li>
-                                          <li><a href="#services">Услуги</a></li>
-                                          <li><a href="#reviews">Отзывы</a></li>
-                                          <li><a href="#contacts">Контакты</a></li>
-                                          <li><a href="#contacts" data-js-scroll-button="form">Заявка</a></li>
+                                          <li><a href="#aboutUs" data-js-hidden-element="200">О нас</a></li>
+                                          <li><a href="#services" data-js-hidden-element="300">Услуги</a></li>
+                                          <li><a href="#reviews" data-js-hidden-element="400">Отзывы</a></li>
+                                          <li><a href="#contacts" data-js-hidden-element="500">Контакты</a></li>
+                                          <li><a href="#contacts" data-js-hidden-element="600" data-js-scroll-button="form">Заявка</a></li>
                                     </ul>
                               </nav>
 
-                              <a href="tel:+79922372673" class="phone-number menu desktop">
+                              <a href="tel:+79922372673" class="phone-number menu desktop" data-js-hidden-element="700">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M2.88036 11.2534C2.9422 8.28926 3.98108 6.08486 5.94754 4.32881C6.57829 3.75592 7.35745 3.50683 8.23555 3.63138C8.60658 3.68119 8.97761 3.71856 9.34864 3.69365C10.0412 3.65628 10.5112 3.99255 10.7462 4.60281C11.5748 6.76984 12.3787 8.93688 13.1826 11.1164C13.4547 11.8636 12.9847 12.449 12.589 12.9845C12.1314 13.6197 11.5748 14.1801 11.0306 14.7405C10.4741 15.3134 10.3999 15.6372 10.7833 16.3347C13.0218 20.4321 16.1632 23.583 20.43 25.5259C20.5785 25.5882 20.7269 25.6753 20.8753 25.7501C21.4442 26.0116 21.9513 25.9493 22.3841 25.4512C23.1757 24.5171 24.0414 23.6578 24.7711 22.6739C25.2534 22.0263 25.5873 21.9142 26.317 22.238C28.4937 23.1845 30.5344 24.3801 32.6122 25.5384C32.9956 25.7501 33.1316 26.0739 33.1192 26.5222C33.0079 30.1962 30.9178 32.1142 27.2446 32.9611C25.4637 33.3721 23.8188 32.9237 22.1862 32.3259C18.7604 31.0805 15.4583 29.6109 12.6879 27.1449C10.4865 25.1772 8.54474 22.9852 6.89985 20.5318C5.63835 18.6387 4.32738 16.783 3.59769 14.5786C3.17719 13.4079 2.868 12.2123 2.88036 11.2534Z"
                                                 fill="var(--add-color)"/>
@@ -79,17 +79,17 @@
                   <div class="welcome-container">
 
                         <div class="head-title center-block">
-                              <h1>Детейлинг студия в Перми</h1>
-                              <p>Детейлинг, которому доверяют - результат, который впечатляет</p>
+                              <h1 data-js-hidden-element="800">Детейлинг студия в Перми</h1>
+                              <p data-js-hidden-element="900">Детейлинг, которому доверяют - результат, который впечатляет</p>
                         </div>
 
                         <div class="present-block center-block">
-                              <span>Позвоните сейчас или оставьте заявку и получите подарок!</span>
-                              <button data-js-scroll-button="form">Получить подарок</button>
+                              <span data-js-hidden-element="1100">Позвоните сейчас или оставьте заявку и получите подарок!</span>
+                              <button data-js-scroll-button="form" data-js-hidden-element="1100">Получить подарок</button>
                         </div>
 
 
-                        <div class="button-scroll-bottom" data-js-scroll-button="bottom">
+                        <div class="button-scroll-bottom" data-js-scroll-button="bottom" data-js-hidden-element="1500">
                               <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3 31.718C3 30.408 4.31411 29.5054 5.53679 29.9757L51.4102 47.6193C53.7209 48.508 56.2791 48.508 58.5898 47.6193L104.463 29.9757C105.686 29.5054 107 30.408 107 31.718C107 32.4903 106.524 33.183 105.803 33.4602L58.5898 51.6193C56.2791 52.508 53.7209 52.508 51.4102 51.6193L4.19659 33.4602C3.47569 33.183 3 32.4903 3 31.718Z" fill="#D9D9D9"/>
                                     <path opacity="0.5" d="M11 50.257C11 49.1666 12.091 48.4133 13.1107 48.7995L51.4577 63.3249C53.7401 64.1894 56.2599 64.1894 58.5423 63.3249L96.8893 48.7995C97.909 48.4133 99 49.1666 99 50.257C99 50.9048 98.5993 51.4851 97.9935 51.7146L58.5423 66.6582C56.2599 67.5228 53.7401 67.5228 51.4577 66.6582L12.0065 51.7146C11.4007 51.4851 11 50.9048 11 50.257Z" fill="#D9D9D9"/>
@@ -105,11 +105,11 @@
                         <div class="navigation-menu-main-container">
                               <nav class="navigation menu in-fixed-block" data-js-navigation-menu="main">
                                     <ul>
-                                          <li><a href="#aboutUs">О нас</a></li>
-                                          <li><a href="#services">Услуги</a></li>
-                                          <li><a href="#reviews">Отзывы</a></li>
-                                          <li><a href="#contacts">Контакты</a></li>
-                                          <li><a data-js-scroll-button="form">Заявка</a></li>
+                                          <li><a href="#aboutUs" data-js-hidden-element>О нас</a></li>
+                                          <li><a href="#services" data-js-hidden-element>Услуги</a></li>
+                                          <li><a href="#reviews" data-js-hidden-element>Отзывы</a></li>
+                                          <li><a href="#contacts" data-js-hidden-element>Контакты</a></li>
+                                          <li><a data-js-scroll-button="form" data-js-hidden-element>Заявка</a></li>
                                     </ul>
                               </nav>
                         </div>
@@ -128,39 +128,39 @@
                         <!-- ABOUT US -->
                          <section id="aboutUs" class="about-us-block">
                               <div class="about-us-container">
-                                    <h2>О нас</h2>
+                                    <h2 data-js-hidden-element>О нас</h2>
 
-                                    <p>Мы - профессианальная детейлинг-студия в Перми, где каждый автомобиль получает внимание и уход, достойные премиум-класса. От химчистки салона до восстановления фар и шумоизоляции - мы делаем всё, чтобы ваш автомобиль выглядел идеально и служил дольше.
-                                    <span>Используем только качественные материалы и проверенные технологии. Ваш комфорт и чистота машины - наша главная цель.</span></p>
+                                    <p data-js-hidden-element="100">Мы - профессианальная детейлинг-студия в Перми, где каждый автомобиль получает внимание и уход, достойные премиум-класса. От химчистки салона до восстановления фар и шумоизоляции - мы делаем всё, чтобы ваш автомобиль выглядел идеально и служил дольше.
+                                    <span data-js-hidden-element="200">Используем только качественные материалы и проверенные технологии. Ваш комфорт и чистота машины - наша главная цель.</span></p>
                                     
                                     <div class="list-feature center-block">
                                           <div class="list-feature-container">
 
-                                                <div class="point experience">
+                                                <div class="point experience" data-js-hidden-element>
                                                       
                                                       <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M63.6562 28.3223C64.2078 27.2122 65.7922 27.2122 66.3438 28.3223L75.1094 45.9658C76.0558 47.8706 77.8745 49.1914 79.9785 49.5029L99.4678 52.3887C100.694 52.5703 101.183 54.0758 100.298 54.9434L86.2266 68.7324C84.7074 70.2212 84.0132 72.3596 84.3672 74.457L87.6455 93.8838C87.8514 95.1059 86.5703 96.0367 85.4717 95.4629L68.0098 86.3418C66.1244 85.357 63.8756 85.357 61.9902 86.3418L44.5283 95.4629C43.4297 96.0367 42.1486 95.1059 42.3545 93.8838L45.6328 74.457C45.9868 72.3596 45.2926 70.2212 43.7734 68.7324L29.7021 54.9434C28.817 54.0758 29.3063 52.5703 30.5322 52.3887L50.0215 49.5029C52.1255 49.1914 53.9442 47.8706 54.8906 45.9658L63.6562 28.3223Z" 
                                                             stroke="#DFBC54" stroke-width="5"/>
                                                       </svg>
       
-                                                      <h3>Опыт</h3>
-                                                      <p>Команда с многолетним стажем, знающая все тонкости профессионального ухода за автомобилем</p>
+                                                      <h3 data-js-hidden-element="100">Опыт</h3>
+                                                      <p data-js-hidden-element="200">Команда с многолетним стажем, знающая все тонкости профессионального ухода за автомобилем</p>
                                                             
                                                 </div>
                                                                                           
-                                                <div class="point equipment">
+                                                <div class="point equipment" data-js-hidden-element>
                                                                                                       
                                                       <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M60.9746 59.8008V67.376C60.9747 69.0327 62.3178 70.376 63.9746 70.376H115.743L121.268 73.1475C121.397 74.1724 122.063 75.0281 122.978 75.4248C122.063 75.8213 121.397 76.6782 121.268 77.7031L115.743 80.4756H59.7354C58.3643 80.4756 57.1673 81.405 56.8281 82.7334L50.3779 108H40.3271L46.3984 84.2178C46.8827 82.3208 45.4499 80.4758 43.4922 80.4756H20.1758V70.376H50.5557C52.2122 70.3757 53.5555 69.0326 53.5557 67.376V59.8008H60.9746ZM16.1758 70.376V80.4756H7V70.376H16.1758ZM75.0254 32.9443L71.6934 41.083L68.3057 47.9062L62.0117 55.8008H52.5186L49.6055 52.1475L46.2402 47.9277L42.835 40.5996L39.5576 32.9443H75.0254ZM69.5938 22L74.2539 28.9443H40.2754L44.9355 22H69.5938Z" 
                                                             stroke="#5A74E7" stroke-width="4"/>
                                                       </svg>
       
-                                                      <h3>Оборудование</h3>
-                                                      <p>Используем только проверенную и премиальную химию и современное технологичное оборудование.</p>
+                                                      <h3 data-js-hidden-element="100">Оборудование</h3>
+                                                      <p data-js-hidden-element="200">Используем только проверенную и премиальную химию и современное технологичное оборудование.</p>
       
                                                 </div>
       
-                                                <div class="point prices">
+                                                <div class="point prices" data-js-hidden-element>
                                                       
                                                       <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_2058_1264)">
@@ -179,8 +179,8 @@
                                                             </defs>
                                                       </svg>
       
-                                                      <h3>Цены</h3>
-                                                      <p>Оптимальное соотношение цены и результата. <br><span>Вы платите за качество, а не за бренд</span></p>
+                                                      <h3 data-js-hidden-element="100">Цены</h3>
+                                                      <p data-js-hidden-element="200">Оптимальное соотношение цены и результата. <br><span>Вы платите за качество, а не за бренд</span></p>
       
                                                 </div>
 
@@ -788,10 +788,10 @@
      <script src="./scripts/scrollButtons.js" type="module"></script> <!-- & style welcome block -->
      <script src="./scripts/openPage.js"></script> <!-- & style welcome block -->
      <script src="./scripts/DOMLoad.js" type="module"></script>
-     <script src="./scripts/openAllServise.js" type="module"></script>
+     <script src="./scripts/openAllServise.js"></script>
+     <script src="./scripts/visibleElements.js"></script>
 
      <!-- Form script -->
      <script src="./scripts/formSubmit.js"></script>
 </body>
-
 </html>

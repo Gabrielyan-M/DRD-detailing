@@ -27,9 +27,23 @@
 .welcome-container p,
 .welcome-container span,
 .welcome-container button {
+      visibility: hidden;
+      transform: translateY(-80%);
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+
       color: white;
       text-align: center;
       padding: 0px 20px;
+}
+
+.welcome-container h1.visible,
+.welcome-container p.visible,
+.welcome-container span.visible,
+.welcome-container button.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
 }
 
 .welcome-container h1 {
@@ -65,12 +79,22 @@
 .button-scroll-bottom {
       position: absolute;
       bottom: 20px;
-      transition:  0.22s;
+      
+      visibility: hidden;
+      opacity: 0;
+
+      transition: 0.22s, opacity 0.75s;
+}
+
+.button-scroll-bottom.visible {
+      visibility: visible;
+      opacity: 1;
 }
 
 .button-scroll-bottom svg path {
       transform: translateY(0px);
       transition:  0.22s;
+      
 }
 
 @media (hover: hover) {

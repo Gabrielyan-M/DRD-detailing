@@ -155,7 +155,6 @@
       margin-top: -40px;
 }
 
-
 @media (hover: hover) {
       .works-link-container a:hover::before {
             width: 100%;
@@ -296,5 +295,4 @@
       .card-container h3 {
             font-size: 1rem;
       }
-
 }

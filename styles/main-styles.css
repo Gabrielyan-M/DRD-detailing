@@ -77,13 +77,13 @@ section {
 }
 
 @media (hover: hover) {
-      .contacts-svg-list:hover li a svg {
+      .contacts-svg-list li a svg:hover {
             opacity: 1;
       }
 }
 
 @media (hover: none) {
-      .contacts-svg-list:active li a svg {
+      .contacts-svg-list li a svg:active {
             opacity: 1;
       }
 }

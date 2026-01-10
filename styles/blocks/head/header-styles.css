@@ -18,6 +18,19 @@ header {
       padding: clamp(20px, 2.78vh, 30px) clamp(30px, 3.125vw, 60px);
 }
 
+.logo-block{
+      visibility: hidden;
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.logo-block.visible{
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
+}
+
 .logo-block:active > svg {
       opacity: 0.85;
 }
@@ -27,7 +40,6 @@ header {
       left: 50%;
       transform: translateX(-50%);
 }
-
 
 .phone-number {
       display: flex;
@@ -47,6 +59,7 @@ header {
       color: white;
       font-size: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
 }
+
 .navigation.menu a::before,
 .phone-number::before {
       content: "";
@@ -62,6 +75,28 @@ header {
 
 .phone-number::before {
       width: 30%;
+}
+
+.navigation.menu a,
+header .phone-number {
+      visibility: hidden;
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.navigation.menu a {
+      transform: translateX(100%);
+}
+
+header .phone-number {
+      transition: opacity 1.25s;
+}
+
+.navigation.menu a.visible,
+header .phone-number.visible {
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
 }
 
 

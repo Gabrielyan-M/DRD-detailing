@@ -66,7 +66,9 @@ if (document.querySelector('.navigation-menu-main')) {
                         document.querySelector('.navigation-menu-main').classList.add('visible')
                   }
                   if (window.pageYOffset < window.innerHeight - 10) {
-                        document.querySelector('.navigation-menu-main').classList.remove('visible')
+                        if ( document.querySelector('.navigation-menu-main').getAttribute('class') ) {
+                              document.querySelector('.navigation-menu-main').classList.remove('visible')
+                        }
                   }
       })
 }
