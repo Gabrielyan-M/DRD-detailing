@@ -44,7 +44,7 @@
 
 .list-feature-container h3 {
       font-weight: var(--medium-font);
-      font-size: clamp(0.875rem, 0.5789rem + 1.1842vw, 2rem); 
+      font-size: clamp(1.125rem, 0.95rem + 0.875vw, 2rem);
       margin-bottom: clamp(12px, 1.4016vw, 20px);
 }
 

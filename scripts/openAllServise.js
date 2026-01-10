@@ -9,7 +9,7 @@ function openListServise(e) {
       if (window.innerHeight <= 740) {
 
             
-            let h = cardsServiseBlock.children[0].getBoundingClientRect().height*2 + 20
+            let h = cardsServiseBlock.children[0].getBoundingClientRect().height*3 + 40
             
             e.target.innerText === 'Все услуги'
             ?e.target.innerText = 'Скрыть список'

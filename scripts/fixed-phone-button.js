@@ -3,10 +3,15 @@ const equipmentLine = document.querySelector('[data-js-equipment-line-top]')
 
 window.addEventListener('scroll', () => {
      
-
-      if ( ( equipmentLine.getBoundingClientRect().top - window.innerHeight + 30 ) < 0 )  {
-            fixedPhoneButton.style.display = "none"
+      if ( window.innerWidth < 700 ) {
+            if ( ( equipmentLine.getBoundingClientRect().top - window.innerHeight + 30 ) < 0 )  {
+                  fixedPhoneButton.style.display = "none"
+            } else {
+                  fixedPhoneButton.style.display = "flex"
+            }
       } else {
-            fixedPhoneButton.style.display = "flex"
+            fixedPhoneButton.style.display = "none"
       }
+
+
 })
