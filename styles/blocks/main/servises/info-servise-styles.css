@@ -84,6 +84,7 @@
       width: 468px;
       height: 624px;
       overflow: hidden;
+      border-radius: 25px;
       gap: 10px;
 }
 
@@ -269,6 +270,7 @@
       .leading-form-buttom button {
             padding: 1.1em 1em;
       }
+
 
 
 }
