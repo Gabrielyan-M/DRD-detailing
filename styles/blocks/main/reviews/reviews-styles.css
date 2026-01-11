@@ -1,18 +1,44 @@
 .reviews-block {
       margin-top: 150px;
 }
+
 .reviews-container {
       flex-direction: column;
       gap: 80px;
 }
 
-.yandex-reviews-black {
+.reviews-container h2 {
+      visibility: hidden;
+      transform: translateY(50%);
+      opacity: 0;
+
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.reviews-container h2.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
+}
+
+.yandex-reviews-block {
+      visibility: hidden;
+      transform: translateY(5%);
+      opacity: 0;
+
       display: flex; 
       justify-content: center; 
       align-items: center; 
       width: 100%; 
       box-sizing: border-box; 
-      padding: 30px;
+
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.yandex-reviews-block.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
 }
 
 .yandex-reviews-container {

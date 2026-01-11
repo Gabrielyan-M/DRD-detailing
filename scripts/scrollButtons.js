@@ -1,11 +1,6 @@
 const scrollButtom = document.querySelectorAll('[data-js-scroll-button]')
 const welcomeBlock = document.querySelector('[data-js-welcome-block]')
 
-const homeBlock = document.querySelector('[data-js-welcome-block]')
-
-const formBlock = document.querySelector('[data-js-form-block]')
-
-
 
 
 scrollButtom.forEach(button => {
@@ -34,9 +29,18 @@ scrollButtom.forEach(button => {
 
 
 function scrollToForm () {
-
       if (document.querySelector('#formBlock')) {
-            document.querySelector('#formBlock').scrollIntoView({block: 'center', behavior: 'smooth'})
+            if ( document.querySelector('[data-js-navigation-menu]').classList.contains('active') ) {
+
+                  document.querySelector('[data-js-body]').classList.remove('active')
+                  document.querySelector('[data-js-navigation-menu]').classList.remove('active')
+                  document.querySelector('[data-js-burger-button]').classList.remove('active')
+                  
+                  document.querySelector('#formBlock').scrollIntoView({block: 'center', behavior: 'smooth'})
+
+            } else {
+                  document.querySelector('#formBlock').scrollIntoView({block: 'center', behavior: 'smooth'})
+            }
       }     
 }
 

@@ -39,6 +39,9 @@
 
 
 .equipment-container h2 {
+      visibility: hidden;
+      opacity: 0;
+
       position: relative;
       display: flex;
       flex-direction: row;
@@ -49,6 +52,13 @@
       font-size: clamp(1.25rem, -0.625rem + 5vw, 2.5rem);
       text-wrap: nowrap;
       color: var(--light-text-color);
+
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.equipment-container h2.visible {
+      visibility: visible;
+      opacity: 1;
 }
 
 .equipment-container h2 span {
@@ -95,21 +105,52 @@
 }
 
 .equipment-logos .detail{
+      visibility: hidden;
+      transform: translateX(-50%);
+      opacity: 0;
       margin-top: 0px;
+
+      transition: transform 0.75s, opacity 0.75s;
       
 }
 
 .equipment-logos .karcher{
+      visibility: hidden;
+      transform: translateX(50%);
+      opacity: 0;
       margin-top: 0px;
+
+      transition: transform 0.75s, opacity 0.75s;
 }
 
 .equipment-logos .shine-system{
+      visibility: hidden;
+      transform: translateX(-50%);
+      opacity: 0;
       margin-top: 0px;
+
+      transition: transform 0.75s, opacity 0.75s;
 }
 
 .equipment-logos .comfort{
+      visibility: hidden;
+      transform: translateX(50%);
+      opacity: 0;
       margin-top: 0px;
+
+      transition: transform 0.75s, opacity 0.75s;
 }
+
+.equipment-logos .detail.visible,
+.equipment-logos .karcher.visible,
+.equipment-logos .shine-system.visible,
+.equipment-logos .comfort.visible {
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
+}
+
+
 
 @media screen and (max-width: 1600px) {
       .equipment-container {

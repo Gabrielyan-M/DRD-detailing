@@ -60,15 +60,17 @@ window.addEventListener('resize', (e) => {
 })
 
 // resize welcome block
-if (document.querySelector('.navigation-menu-main')) {
-      window.addEventListener('scroll', () => {
-                  if ( window.pageYOffset > window.innerHeight ) {
-                        document.querySelector('.navigation-menu-main').classList.add('visible')
+function visibleHiddenBurgerButton () {
+      if (document.querySelector('.navigation-menu-main')) {
+            if ( window.pageYOffset > window.innerHeight ) {
+                  document.querySelector('.navigation-menu-main').classList.add('visible')
+            }
+            if (window.pageYOffset < window.innerHeight - 10) {
+                  if ( document.querySelector('.navigation-menu-main').getAttribute('class') ) {
+                        document.querySelector('.navigation-menu-main').classList.remove('visible')
                   }
-                  if (window.pageYOffset < window.innerHeight - 10) {
-                        if ( document.querySelector('.navigation-menu-main').getAttribute('class') ) {
-                              document.querySelector('.navigation-menu-main').classList.remove('visible')
-                        }
-                  }
-      })
+            }
+      }
 }
+
+export { visibleHiddenBurgerButton }

@@ -4,9 +4,6 @@ cardServise.forEach(card => (
       card.addEventListener('click', () => {
             const cardID = card.getAttribute('data-js-card-servises')
 
-            console.log(card);
-            
-            
             if (cardID) {
                   openPage (cardID)
             }
