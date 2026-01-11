@@ -233,7 +233,10 @@ footer .contacts-block .phone-number::before {
 }
 
 .footer-info .text-info p,
-.footer-inf .text-info a {
+.footer-info .text-info a {
+      visibility: unset;
+      opacity: unset;
+      transform: unset;
       font-size: clamp(0.8125rem, 0.1562rem + 1.75vw, 1.25rem);
       color: var(--light-text-color);
 }
