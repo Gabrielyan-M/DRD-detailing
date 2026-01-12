@@ -88,6 +88,16 @@ header .phone-number {
       transform: translateX(100%);
 }
 
+.mobile-menu-container .navigation.menu.mobile a,
+.mobile-menu-container .phone-number{
+      visibility: unset;
+      opacity: unset;
+}
+
+.navigation.menu a:hover {
+      cursor: pointer;
+}
+
 header .phone-number {
       transition: opacity 1.25s;
 }
@@ -98,6 +108,11 @@ header .phone-number.visible {
       transform: translateX(0%);
       opacity: 1;
 }
+/* 
+header .phone-number.mobile a {
+      visibility: unset;
+      opacity: 1;
+} */
 
 
 @media (hover: hover) {   
