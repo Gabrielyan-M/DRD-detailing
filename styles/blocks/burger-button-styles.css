@@ -42,7 +42,6 @@
       left: 0px;
 }
 
-
 .navigation-menu-main {
       visibility: hidden;
       opacity: 0;
@@ -54,62 +53,64 @@
       align-items: center;
       justify-content: center;
       gap: 0px;
-      /* width: 100%;
-      height: min-content; */
+      width: 80px;
+      height: 80px;
       top: 40px;
       right: 40px;
-      padding-left: 0px;
-      /* overflow: hidden; */
       background-color: #000000;
       border: 2px solid rgba(255, 255, 255, 0.2);
-      border-radius: 200px;
+      border-radius: 50px;
 
+      transition: 0.22s;
       z-index: 10000;
       /* transition: padding-left 0.22s ; */
 }
+
+.navigation-menu-main.active {
+      width: 50vw;
+}
+
 
 .navigation-menu-main.visible {
       visibility: visible;
       opacity: 1;
       transition: 0.22s;
 }
-
-.navigation-menu-main.active {
-      padding-left: 40px;
-      gap: 60px;
-
+      
+.navigation-menu-main-block {
+      position: absolute;
+      left: 30px;
+      display: flex;
+      align-items: center;
+      width: max-content;
+      height: 100%;
 }
 
-.navigation-menu-main-container {
-      overflow: hidden;
-      transition: 0.22s;
+.navigation.menu  {
+      opacity: 0;
+      transition: 0.11s;
 }
-
-
-.navigation-menu-main.active .navigation-menu-main-container {
-      gap: 60px;
-
+.navigation.menu.active  {
+      opacity: 1;
+      transition: 0.33s;
 }
 
 
 .burger-button-main-block {
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 80px;
-      height: 80px;
-      margin: 0px;  
+      top: 0px;
+      right: 0px;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #000000;
+      border-radius: 200px;
+      z-index: 10;
 }
 
-.navigation.menu.in-fixed-block {
-      overflow: hidden;
-      width: 0px;
-      transition: 0.22s;
-}
 
-.navigation.menu.in-fixed-block.active {
-      width: auto;
-}
 
 
 
@@ -146,11 +147,6 @@
             height: 32px;
       }
 
-      .burger-button-main-block {
-            width: 70px;
-            height: 70px;
-      }
-
       .burger-button span {
             height: 4px;
       }
@@ -177,24 +173,21 @@
             bottom: 5px;
             left: 2px;
       }
+
+      .navigation-menu-main {
+            top: 30px;
+            right: 30px;
+      
+            width: 70px;
+            height: 70px;
+      }
+      
 }
 
 @media screen and (max-width: 1200px) {
       .burger-button {
             width: 37px;
             height: 27px;
-      }
-
-      .navigation-menu-main.active {
-            padding-left: 30px;
-            gap: 20px;
-            justify-content: space-between;
-            width: calc(100% - 50px);
-      }
-
-      .burger-button-main-block {
-            width:66px;
-            height:66px;
       }
 
       .burger-button span {
@@ -223,6 +216,15 @@
             bottom: 4px;
             left: 3px;
       }
+
+      .navigation-menu-main {
+            top: 24px;
+            right: 24px;
+      }
+
+      .navigation-menu-main.active {
+            width: 56vw;
+      }
 }
 
 @media screen and (max-width: 1000px) {
@@ -230,15 +232,9 @@
             display: flex;
       }
 
-      .navigation-menu-main {
-            top: 25px;
-            right: 25px;
-      }
       .navigation-menu-main.active {
-            /* width: calc(100vw - 40px - 25px ); */
-            justify-content: space-between;
+            width: calc( 100vw - (24px * 2) );
       }
-
 
 }
 
@@ -270,49 +266,50 @@
             left: 2px;
       }
 
-      .burger-button-main-block {
-            width: 57px;
-            height: 57px;
+      .navigation-menu-main.active {
+            width: calc( 100vw - (24px * 2) );
       }
 
+}
+
+@media screen and (max-width: 700px) {
+      
       .navigation-menu-main {
-            top: 20px; 
-            right: 20px; 
-            justify-content: flex-end;
-            align-items: flex-start;
-            border-radius: 50px;
-            transition: 0.22s;
+            width: 60px;
+            height: 60px;
+            border-radius: 32px;
       }
 
       .navigation-menu-main.active {
-            padding: 0px 0px 30px 30px;
-            width: auto;
-            border-radius: 30px;
+            width: 230px;
+            height: 350px;
+            border-radius: 32px;
       }
 
-      .navigation-menu-main-container {
-            height: 0px;
+      .burger-button-main-block {
+            height: 58px;
+            
       }
 
-      .navigation-menu-main.active .navigation-menu-main-container {
-            height: 100%;
-            padding: 0px;
-      }
-
-      .navigation.menu.in-fixed-block {
-            height: 0px;
-      }
-
-      .navigation.menu.in-fixed-block.active {
-            width: 100%;
-            height: 100%;
-            padding-top: 30px;
-      }
-      
 
       .navigation.menu ul {
             flex-direction: column;
-            gap: 40px;
+            gap: 36px;
+      }
+
+}
+
+@media screen and (max-width: 500px) {
+      
+      .navigation-menu-main.active {
+            width: 220px;
+            height: 300px;
+            border-radius: 32px;
+      }
+
+      .navigation.menu ul {
+            flex-direction: column;
+            gap: 28px;
       }
 
 }
