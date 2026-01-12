@@ -1,0 +1,8 @@
+.privacy-policy-id .welcome-block {
+      height: auto;
+}
+.privacy-policy-id h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+}

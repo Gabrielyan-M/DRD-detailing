@@ -41,8 +41,8 @@
 @import url('./blocks/footer/footer-styles.css');
 
 
-
-
+/* privacy policy */
+@import url('./blocks/main/privacy-policy/privacy-policy.styles.css');
 
 
 /* all */

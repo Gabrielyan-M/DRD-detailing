@@ -99,12 +99,40 @@ footer h2.visible {
 }
 
 .servises-footer ul a {
+      position: relative;
       visibility: hidden;
       transform: translateY(50%);
       opacity: 0;
       
       transition: transform 0.75s, opacity 0.75;
 }
+
+.servises-footer ul a::before {
+      position: absolute;
+      content: "";
+      background-color: var(--light-text-color);
+      height: 2px;
+      border-radius: 10px;
+      width: 0%;
+      bottom: -2px;
+      right: 0px;
+
+      transition: 0.22s;
+}
+
+@media (hover: hover) {
+      .servises-footer ul a:hover::before {
+            width: 40%;
+      }   
+}
+
+@media (hover: none) {
+      .servises-footer ul a:active::before {
+            width: 40%;
+      }  
+}
+
+
 .servises-footer ul  a.visible {
       visibility: visible;
       transform: translateY(0%);
