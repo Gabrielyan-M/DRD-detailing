@@ -54,30 +54,42 @@
       opacity: 1;
 }
 
+.card-background {
+      position: absolute;
+      background-color:  rgba(0, 0, 0, 1);
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      transition: 0.22s;
+}
+
 /* background images | url */
 .dry-cleaning {
-      background-image: url('../../../../media/images/servises/001dry-cleaning/photo11.png');
+      background-image: url('../../../../media/images/servises/001dry-cleaning/dry-cleaning1.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
 }
 
 .noise-insulation {
-      background-image: url('../../../../media/images/servises/002noise-insulation/photo21.png');
+      background-image: url('../../../../media/images/servises/002noise-insulation/noise-insulation3.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
 }
 
 .engine-washing {
-      background-image: url('../../../../media/images/servises/003engine-washing/photo31.png');
+      background-image: url('../../../../media/images/servises/003engine-washing/engine-washing-after1.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
 }
 
 .ozonation {
-      background-image: url('../../../../media/images/servises/004ozonation/photo41.png');
+      background-image: url('../../../../media/images/servises/004ozonation/ozonation1.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -98,7 +110,7 @@
 }
 
 .polishing  {
-      background-image: url('../../../../media/images/servises/007polishing/photo71.png');
+      background-image: url('../../../../media/images/servises/007polishing/polishing1.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -123,6 +135,7 @@
       font-size: 1.5rem;
       text-align: center;
       color: var(--light-color);
+      z-index: 2;
 }
 
 .more-button {
@@ -140,6 +153,7 @@
       border-radius: 200px;
       overflow: hidden;
       box-shadow: inset 0 0 0 3px var(--light-color);
+      backdrop-filter: blur(15px);
       transition: width 0.22s;
 }
 
@@ -188,6 +202,9 @@
 
       .card-block:hover {
             cursor: pointer;
+      }
+      .card-block:hover .card-background {
+            opacity: 0.2;
       }
       .card-block:hover .more-button {
             width: 200px;

@@ -153,6 +153,9 @@
 }
 
 .images-visible-block {
+      display: flex;
+      justify-content: center;
+
       width: 468px;
       height: 624px;
       overflow: hidden;

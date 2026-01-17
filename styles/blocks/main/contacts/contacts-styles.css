@@ -340,7 +340,11 @@ input[type="submit"] {
       transition: transform 0.75s, opacity 0.75s;
 }
 
-input[type="submit"] {
+input[type="submit"]:hover {
+      cursor: pointer;
+}
+
+input[type="submit"].visible {
       visibility: visible;
       transform: translateY(0%);
       opacity: 1;
